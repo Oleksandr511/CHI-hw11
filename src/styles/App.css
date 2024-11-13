@@ -1,0 +1,12 @@
+
+
+.appContainer {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #efe9eb;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  margin-top: 70px;
+}
