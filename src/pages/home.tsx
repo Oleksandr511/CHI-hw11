@@ -1,8 +1,6 @@
 import React from "react";
-import { getUserExhibits } from "../app/api/exhibitActions";
-// import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { Exhibit } from "../app/interface/exhibit";
+import { getUserExhibits } from "../api/exhibitActions";
+import { Exhibit } from "../interface/exhibit";
 import { handleCardClick } from "../app/utils";
 import { useRequest } from "ahooks";
 import loadingGif from "../assets/loading-gif.gif";
@@ -40,7 +38,6 @@ const HomePage = () => {
     <div style={{ paddingTop: "20px", height: "100vh" }}>
       <SideBar />
       <h1>Home Page</h1>
-      {/* <Link to="/new-post">New post</Link> */}
       {exhibits.map((exhibit: Exhibit) => {
         return (
           <div

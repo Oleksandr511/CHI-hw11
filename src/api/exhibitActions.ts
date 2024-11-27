@@ -1,4 +1,3 @@
-import { GetServerSideProps } from "next";
 import axiosInstance from "./axiosInstance";
 
 export async function getUserExhibits() {

@@ -1,8 +1,8 @@
 import React from "react";
 import { useRequest } from "ahooks";
 import { Link, useParams } from "react-router-dom";
-import { getCommentsByExhibitId } from "../app/api/commentActions";
-import { Comment as CommentInterface } from "../app/interface/comment";
+import { getCommentsByExhibitId } from "../api/commentActions";
+import { Comment as CommentInterface } from "../interface/comment";
 import Comment from "./Comment";
 // import NewComment from "../pages/NewComment";
 import { useSelector } from "react-redux";
@@ -41,12 +41,7 @@ export const CommentStripe: React.FC<CommentStripeProps> = ({ postId }) => {
   };
 
   return loading ? (
-    <Image
-      width={300}
-      height={300}
-      src={loadingGif}
-      alt="gif"
-    />
+    <Image width={300} height={300} src={loadingGif} alt="gif" />
   ) : error ? (
     <div>Error</div>
   ) : (

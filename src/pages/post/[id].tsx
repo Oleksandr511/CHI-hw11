@@ -1,14 +1,13 @@
 import React from "react";
-import { deleteExhibit, getExhibitById } from "../../app/api/exhibitActions";
+import { deleteExhibit, getExhibitById } from "../../api/exhibitActions";
 import { Outlet, useParams } from "react-router-dom";
-import { Exhibit } from "../../app/interface/exhibit";
+import { Exhibit } from "../../interface/exhibit";
 import { useRequest } from "ahooks";
 import loadingGif from "../../assets/loading-gif.gif";
-import { getUserProfile } from "../../app/api/userActions";
+import { getUserProfile } from "../../api/userActions";
 import { useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import DeleteIcon from "@mui/icons-material/Delete";
-// import { useNavigate } from "react-router-dom";
 import styles from "../../styles/post.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";

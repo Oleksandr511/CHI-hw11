@@ -1,8 +1,8 @@
 import React from "react";
-import { Comment as CommentInterface } from "../app/interface/comment";
+import { Comment as CommentInterface } from "../interface/comment";
 import moment from "moment";
 import styles from "../styles/comment.module.css";
-import { deleteExhibitComment } from "../app/api/exhibitActions";
+import { deleteExhibitComment } from "../api/exhibitActions";
 import { useParams } from "react-router-dom";
 import { useRequest } from "ahooks";
 import { useSelector } from "react-redux";
